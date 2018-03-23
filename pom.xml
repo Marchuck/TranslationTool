@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+
+    <groupId>TranslationTool</groupId>
+    <artifactId>org.translation.tool</artifactId>
+    <version>1.0-SNAPSHOT</version>
+
+    <properties>
+        <kotlin.version>1.2.10</kotlin.version>
+        <knowm.version>4.3.2</knowm.version>
+        <rxjava.version>2.1.6</rxjava.version>
+        <retrofit.version>2.3.0</retrofit.version>
+    </properties>
+
+    <repositories>
+        <repository>
+            <id>sonatype-oss-snapshot</id>
+            <snapshots/>
+            <url>https://oss.sonatype.org/content/repositories/snapshots</url>
+        </repository>
+    </repositories>
+    <dependencies>
+        <dependency>
+            <groupId>org.jetbrains.kotlin</groupId>
+            <artifactId>kotlin-stdlib-jre8</artifactId>
+            <version>${kotlin.version}</version>
+        </dependency>
+
+        <dependency>
+            <groupId>com.squareup.okhttp3</groupId>
+            <artifactId>okhttp</artifactId>
+            <version>3.8.0</version>
+        </dependency>
+
+        <dependency>
+            <groupId>com.squareup.okhttp3</groupId>
+            <artifactId>logging-interceptor</artifactId>
+            <version>3.6.0</version>
+        </dependency>
+
+        <dependency>
+            <groupId>com.squareup.okio</groupId>
+            <artifactId>okio</artifactId>
+            <version>1.13.0</version>
+        </dependency>
+
+        <dependency>
+            <groupId>io.reactivex.rxjava2</groupId>
+            <artifactId>rxjava</artifactId>
+            <version>${rxjava.version}</version>
+        </dependency>
+
+        <dependency>
+            <groupId>com.squareup.retrofit2</groupId>
+            <artifactId>retrofit</artifactId>
+            <version>${retrofit.version}</version>
+        </dependency>
+
+        <dependency>
+            <groupId>com.squareup.retrofit2</groupId>
+            <artifactId>converter-gson</artifactId>
+            <version>${retrofit.version}</version>
+        </dependency>
+
+        <dependency>
+            <groupId>com.squareup.retrofit2</groupId>
+            <artifactId>adapter-rxjava2</artifactId>
+            <version>${retrofit.version}</version>
+        </dependency>
+
+        <dependency>
+            <groupId>org.knowm.xchange</groupId>
+            <artifactId>xchange-core</artifactId>
+            <version>${knowm.version}</version>
+        </dependency>
+
+        <dependency>
+            <groupId>org.knowm.xchange</groupId>
+            <artifactId>xchange-bitfinex</artifactId>
+            <version>${knowm.version}</version>
+        </dependency>
+
+        <dependency>
+            <groupId>org.knowm.xchange</groupId>
+            <artifactId>xchange-bitmarket</artifactId>
+            <version>${knowm.version}</version>
+        </dependency>
+
+        <dependency>
+            <groupId>org.knowm.xchange</groupId>
+            <artifactId>xchange-binance</artifactId>
+            <version>${knowm.version}</version>
+        </dependency>
+
+        <dependency>
+            <groupId>org.ta4j</groupId>
+            <artifactId>ta4j-core</artifactId>
+            <version>0.10</version>
+        </dependency>
+
+        <dependency>
+            <groupId>org.slf4j</groupId>
+            <artifactId>slf4j-api</artifactId>
+            <version>1.7.25</version>
+        </dependency>
+
+        <dependency>
+            <groupId>org.slf4j</groupId>
+            <artifactId>slf4j-nop</artifactId>
+            <version>1.7.25</version>
+        </dependency>
+
+        <dependency>
+            <groupId>org.jetbrains.kotlin</groupId>
+            <artifactId>kotlin-test</artifactId>
+            <version>${kotlin.version}</version>
+            <scope>test</scope>
+        </dependency>
+    </dependencies>
+
+
+</project>
